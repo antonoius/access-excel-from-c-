@@ -1,0 +1,15 @@
+     //use this libarary 
+     using Excel = Microsoft.Office.Interop.Excel;
+     // but u must include it from refrences < it name = excel 
+     
+     
+     string path = @"F:\project wpf\father antonious.xlsx";
+                Excel.Application excel = new Excel.Application();
+                excel.Visible = true;
+                Excel.Workbooks wb = excel.Workbooks;
+                Excel.Workbook ws = wb.Open(path);
+                //   MessageBox.Show("Ok");
+                Excel.Worksheet WorkHere = excel.ActiveSheet as Excel.Worksheet;
+               WorkHere.Cell[row index ,column index]
+               // and to get value
+                WorkHere.Cells[x, 3] = WorkHere.Cells[x, 4].Value2
