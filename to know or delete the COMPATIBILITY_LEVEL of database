@@ -1,0 +1,10 @@
+--to change the COMPATIBILITY_LEVEL
+ALTER DATABASE DatabaseName  
+SET COMPATIBILITY_LEVEL = 130;  
+GO  
+--to know the COMPATIBILITY_LEVEL
+USE DatabaseName;  
+GO  
+SELECT compatibility_level  
+FROM sys.databases WHERE name = 'DatabaseName';  
+GO  
